@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#infographic {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#world-map {
+    fill: #e0e0e0;
+    stroke: #bdbdbd;
+    stroke-width: 2;
+}
+
+.continent {
+    fill: #4CAF50;
+    stroke: #2E7D32;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.continent:hover {
+    transform: scale(1.2);
+}
+
+#tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#energy-chart {
+    margin-top: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chart-slice {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.chart-slice:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+

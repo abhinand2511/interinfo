@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Renewable Energy Trends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Global Renewable Energy Trends</h1>
+        <div id="infographic">
+            <svg width="1000" height="500" viewBox="0 0 1000 500">
+                <path id="world-map" d="M150,100 Q400,50 650,100 T1000,100 V400 Q750,450 500,400 T0,400 V100" />
+                <circle class="continent" cx="200" cy="180" r="20" data-continent="North America" />
+                <circle class="continent" cx="300" cy="350" r="20" data-continent="South America" />
+                <circle class="continent" cx="480" cy="160" r="20" data-continent="Europe" />
+                <circle class="continent" cx="480" cy="300" r="20" data-continent="Africa" />
+                <circle class="continent" cx="650" cy="220" r="20" data-continent="Asia" />
+                <circle class="continent" cx="800" cy="380" r="20" data-continent="Oceania" />
+            </svg>
+            <div id="tooltip"></div>
+            <div id="energy-chart"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
